@@ -17,7 +17,6 @@ ADD_DEFINITIONS( ${QT_DEFINITIONS} )
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
 #INCLUDE_DIRECTORIES(/Users/guiga/Documents/workspace/hello_cmake_lib)
-
 #LINK_DIRECTORIES(/Users/guiga/Documents/workspace/hello_cmake_lib/build)
 
 ADD_EXECUTABLE( hello_qt ${hello_cmake_SOURCES}
