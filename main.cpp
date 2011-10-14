@@ -20,7 +20,10 @@ int main(int argc, char *argv[])
 
     QSplashScreen *splash = new QSplashScreen;
     splash->setPixmap(QPixmap(":imagens/splash-screen.jpg"));
+    Qt::Alignment topRight = Qt::AlignRight | Qt::AlignTop;
+    splash->showMessage("Carregando o app ...", topRight, Qt::white);
     splash->show();
+
     I::sleep(3);
 
     MainWindow w;

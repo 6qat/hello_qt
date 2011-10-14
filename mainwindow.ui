@@ -29,18 +29,19 @@
    </property>
    <widget class="QMenu" name="menuSobre_o_App">
     <property name="title">
-     <string>Sobre o App</string>
+     <string>Ajuda</string>
     </property>
     <addaction name="actionSobre_o_Qt"/>
     <addaction name="actionSobre_o_App"/>
    </widget>
    <widget class="QMenu" name="menuTeste">
     <property name="title">
-     <string>Teste</string>
+     <string>Arquivo</string>
     </property>
+    <addaction name="actionSair"/>
    </widget>
-   <addaction name="menuSobre_o_App"/>
    <addaction name="menuTeste"/>
+   <addaction name="menuSobre_o_App"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -61,10 +62,32 @@
     <string>Sobre o App</string>
    </property>
   </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>&amp;Sair</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="resources.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actionSair</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
