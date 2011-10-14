@@ -5,3 +5,6 @@ cmake_install.cmake
 *.autosave
 *.depends
 *.pro.user
+moc*
+*.cxx
+ui_*

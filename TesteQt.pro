@@ -11,16 +11,22 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    dialogabout.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    dialogabout.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    dialogabout.ui
 
 OTHER_FILES += \
     CMakeLists.txt
 
 RESOURCES += \
     resources.qrc
+
+
+
 
 

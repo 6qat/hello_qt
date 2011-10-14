@@ -15,8 +15,16 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    void closeEvent(QCloseEvent *);
+
 private:
     Ui::MainWindow *ui;
+    void setupActions();
+    bool okToContinue();
+
+private slots:
+    void showAboutDialog();
+
 };
 
 #endif // MAINWINDOW_H

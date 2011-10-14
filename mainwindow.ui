@@ -27,6 +27,20 @@
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuSobre_o_App">
+    <property name="title">
+     <string>Sobre o App</string>
+    </property>
+    <addaction name="actionSobre_o_Qt"/>
+    <addaction name="actionSobre_o_App"/>
+   </widget>
+   <widget class="QMenu" name="menuTeste">
+    <property name="title">
+     <string>Teste</string>
+    </property>
+   </widget>
+   <addaction name="menuSobre_o_App"/>
+   <addaction name="menuTeste"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -37,6 +51,16 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSobre_o_Qt">
+   <property name="text">
+    <string>Sobre o Qt</string>
+   </property>
+  </action>
+  <action name="actionSobre_o_App">
+   <property name="text">
+    <string>Sobre o App</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
