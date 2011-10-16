@@ -9,4 +9,6 @@ moc*
 *.cxx
 ui_*
 hello_qt
-
+*.o
+*.app
+qrc_*
