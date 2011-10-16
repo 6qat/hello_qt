@@ -27,14 +27,10 @@ RESOURCES += \
     resources.qrc
 
 
-
-
-
-
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../hello_qt_model-build-desktop-Desktop_Qt_4_7_4_for_GCC__Qt_SDK__Debug/release/ -lhello_qt_model
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../hello_qt_model-build-desktop-Desktop_Qt_4_7_4_for_GCC__Qt_SDK__Debug/debug/ -lhello_qt_model
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../hello_qt_model/release/ -lhello_qt_model
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../hello_qt_model/debug/ -lhello_qt_model
 else:symbian: LIBS += -lhello_qt_model
-else:unix: LIBS += -L$$PWD/../hello_qt_model-build-desktop-Desktop_Qt_4_7_4_for_GCC__Qt_SDK__Debug/ -lhello_qt_model
+else:unix: LIBS += -L$$PWD/../hello_qt_model/ -lhello_qt_model
 
 INCLUDEPATH += $$PWD/../hello_qt_model
 DEPENDPATH += $$PWD/../hello_qt_model
