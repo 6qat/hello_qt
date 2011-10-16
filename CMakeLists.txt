@@ -23,13 +23,13 @@ INCLUDE( ${QT_USE_FILE} )
 ADD_DEFINITIONS( ${QT_DEFINITIONS} )
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
-#INCLUDE_DIRECTORIES(/Users/guiga/Documents/workspace/hello_cmake_lib)
-#LINK_DIRECTORIES(/Users/guiga/Documents/workspace/hello_cmake_lib/build)
+INCLUDE_DIRECTORIES(/Users/guiga/Documents/workspace/hello_qt_model)
+LINK_DIRECTORIES(/Users/guiga/Documents/workspace/hello_qt_model-build-desktop-Desktop_Qt_4_7_4_for_GCC__Qt_SDK__Debug)
 
 ADD_EXECUTABLE( hello_qt ${hello_cmake_SOURCES}
                         ${hello_cmake_HEADERS_MOC}
                         ${hello_cmake_FORMS_HEADERS}
                         ${hello_cmake_RESOURCES_RCC})
 
-TARGET_LINK_LIBRARIES( hello_qt ${QT_LIBRARIES} )# mylib)
+TARGET_LINK_LIBRARIES( hello_qt ${QT_LIBRARIES}  hello_qt_model)
 

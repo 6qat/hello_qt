@@ -4,6 +4,8 @@
 #include <QSplashScreen>
 #include <QThread>
 
+#include <hellomodel.h>
+
 class I : public QThread
 {
     public:
@@ -30,6 +32,9 @@ int main(int argc, char *argv[])
     w.show();
     splash->finish(&w);
     delete splash;
+
+    HelloModel modelo;
+    modelo.soma_dinamica(2,5);
 
     return a.exec();
 }
