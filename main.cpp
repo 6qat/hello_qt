@@ -20,10 +20,15 @@ int main(int argc, char *argv[])
 
     QApplication a(argc, argv);
 
+    HelloModel modelo;
+    QString soma;
+    soma.setNum( modelo.soma_dinamica(2,5) );
+
+
     QSplashScreen *splash = new QSplashScreen;
     splash->setPixmap(QPixmap(":imagens/splash-screen.jpg"));
     Qt::Alignment topRight = Qt::AlignRight | Qt::AlignTop;
-    splash->showMessage("Carregando o app ...", topRight, Qt::white);
+    splash->showMessage("Carregando o app ..." + soma, topRight, Qt::white);
     splash->show();
 
     I::sleep(3);
@@ -33,8 +38,7 @@ int main(int argc, char *argv[])
     splash->finish(&w);
     delete splash;
 
-    HelloModel modelo;
-    modelo.soma_dinamica(2,5);
+
 
     return a.exec();
 }
